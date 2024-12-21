@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- CheckBoxes -->
+
+    <CheckBox
+        android:id="@+id/coxinha"
+        android:layout_width="221dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/coxinha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.010"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo" />
+
+    <CheckBox
+        android:id="@+id/cini"
+        android:layout_width="218dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/cini"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.010"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cafe" />
+
+    <CheckBox
+        android:id="@+id/cafe"
+        android:layout_width="217dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/cafe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.010"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/todinho" />
+
+    <CheckBox
+        android:id="@+id/todinho"
+        android:layout_width="217dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/todinho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.010"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cocacola" />
+
+    <CheckBox
+        android:id="@+id/cocacola"
+        android:layout_width="216dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/cocacola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.010"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/esfirra" />
+
+    <CheckBox
+        android:id="@+id/esfirra"
+        android:layout_width="215dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/esfirra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.010"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/paodequeijo" />
+
+    <CheckBox
+        android:id="@+id/paodequeijo"
+        android:layout_width="218dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/paodequeijo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.010"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hamburgao" />
+
+    <CheckBox
+        android:id="@+id/hamburgao"
+        android:layout_width="218dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/hamburgao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.010"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dogao" />
+
+    <CheckBox
+        android:id="@+id/dogao"
+        android:layout_width="220dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/dogao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.010"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coxinha" />
+
+
+    <EditText
+        android:id="@+id/editTextCoxinha"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@id/coxinha"
+        app:layout_constraintTop_toTopOf="@id/coxinha" />
+
+    <!-- RadioGroup -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/cini"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radioButton1" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButton2" />
+    </RadioGroup>
+
+    <!-- Total -->
+    <TextView
+        android:id="@+id/totaldinheiro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 0.00"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- EditText Fields -->
+
+    <EditText
+        android:id="@+id/editTextDogao"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@id/dogao"
+        app:layout_constraintTop_toTopOf="@id/dogao" />
+
+    <EditText
+        android:id="@+id/editTextHamburgao"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toEndOf="@id/hamburgao"
+        app:layout_constraintTop_toTopOf="@id/hamburgao" />
+
+    <EditText
+        android:id="@+id/editTextPaoDeQueijo"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@id/paodequeijo"
+        app:layout_constraintTop_toTopOf="@id/paodequeijo" />
+
+    <EditText
+        android:id="@+id/editTextEsfirra"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@id/esfirra"
+        app:layout_constraintTop_toTopOf="@id/esfirra" />
+
+    <EditText
+        android:id="@+id/editTextCocaCola"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@id/cocacola"
+        app:layout_constraintTop_toTopOf="@id/cocacola" />
+
+    <EditText
+        android:id="@+id/editTextTodinho"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@id/todinho"
+        app:layout_constraintTop_toTopOf="@id/todinho" />
+
+    <EditText
+        android:id="@+id/editTextCafe"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@id/cafe"
+        app:layout_constraintTop_toTopOf="@id/cafe" />
+
+    <EditText
+        android:id="@+id/editTextCini"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@id/cini"
+        app:layout_constraintTop_toTopOf="@id/cini" />
+</androidx.constraintlayout.widget.ConstraintLayout>

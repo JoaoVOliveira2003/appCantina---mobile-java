@@ -1,0 +1,37 @@
+<resources>
+    <!-- Título do Aplicativo -->
+    <string name="app_name">Cantina3</string>
+    <string name="titulo">Cantina Online</string>
+
+    <!-- Itens do Cardápio -->
+    <string name="coxinha">Coxinha(R$ 5.0)</string>
+    <string name="dogao">Dogão(R$ 6.0)</string>
+    <string name="hamburgao">Hamburgão(R$ 7.0)</string>
+    <string name="paodequeijo">Pão de Queijo(R$ 4.0)</string>
+    <string name="esfirra">Esfirra(R$ 3.0)</string>
+    <string name="cocacola">Coca-Cola(R$ 2.5)</string>
+    <string name="todinho">Todinho(R$ 2.0)</string>
+    <string name="cafe">Café(R$ 1.5)</string>
+    <string name="cini">Cini(R$ 2.0)</string>
+
+    <!-- Seção de Total -->
+    <string name="total">Total:</string>
+    <string name="totaldinheiro">R$ 0,00</string>
+
+    <!-- editTextCini -->
+    <string name="editTextCoxinha">Retirada</string>
+    <string name="editTextDogao">Entrega(R$ 20.0)</string>
+    <string name="editTextHamburgao"> </string>
+    <string name="editTextPaoDeQueijo"> </string>
+    <string name="editTextEsfirra"> </string>
+    <string name="editTextCocaCola"> </string>
+    <string name="editTextTodinho"> </string>
+    <string name="editTextCafe"> </string>
+    <string name="editTextCini"> </string>
+
+
+    <!-- RadioButton -->
+    <string name="radioButton1">Retirada</string>
+    <string name="radioButton2">Entrega</string>
+
+</resources>
